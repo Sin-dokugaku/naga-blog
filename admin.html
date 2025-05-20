@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>naga-blog｜記事投稿ページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="post-form">
+    <h2>パスワードを入力して投稿ページを開く</h2>
+    <input type="password" id="adminPassword" placeholder="パスワード">
+    <button onclick="checkPassword()">ログイン</button>
+  </section>
+
+  <section class="post-form" id="realForm" style="display: none;">
+    <h2>新しい記事を書く</h2>
+    <input type="text" id="titleInput" placeholder="記事タイトル">
+    <textarea id="bodyInput" placeholder="記事本文"></textarea>
+    <button onclick="saveArticle()">保存する</button>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
